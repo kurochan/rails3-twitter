@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     OAuth::Consumer.new(
       'consumer key',
       'consumer secret',
-      {site: "http://twitter.com"}
+      :site  => "http://api.twitter.com"
     )
   end
 
